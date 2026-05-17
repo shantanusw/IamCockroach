@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cockroach Talent Hunt Awards 2026 — India's Youth Movement</title>
+<meta name="description" content="Power calls us Cockroaches. We take that tag with pride. India's first awards for young people doing real ground-level work. Free to register.">
+<meta property="og:title" content="🪳 Cockroach Talent Hunt Awards 2026">
+<meta property="og:description" content="Power calls us Cockroaches. We take that tag with pride. We are India's most necessary people. Register, share your story, show the country what cockroaches actually do.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#d85a30;--orange-dark:#b84820;--black:#0d0d0d;--dark:#111111;--dark2:#1a1a1a;--dark3:#222222;--off-white:#f5f4ee;--muted:#888888;--muted2:#555555;--muted3:#333333;--border:rgba(255,255,255,0.08);--font-display:'Syne',sans-serif;--font-body:'DM Sans',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:#f5f4ee;color:#1a1a1a;overflow-x:hidden}
+
+/* TICKER */
+.ticker-wrap{background:var(--orange);overflow:hidden;padding:.5rem 0;position:relative;z-index:100}
+.ticker-track{display:flex;width:max-content;animation:ticker 35s linear infinite}
+.ticker-track span{font-size:12px;font-weight:500;color:#fff;letter-spacing:.06em;white-space:nowrap;padding:0 1.5rem}
+.ticker-track span::after{content:'🪳';margin:0 .5rem;opacity:.6}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* NAV */
+nav{background:var(--dark);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:99;border-bottom:1px solid var(--border)}
+.nav-logo{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--off-white)}
+.nav-logo em{color:var(--orange);font-style:normal}
+.nav-links{display:flex;align-items:center;gap:1.5rem}
+.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--off-white)}
+.nav-cta{background:var(--orange)!important;color:#fff!important;padding:.45rem 1.1rem;border-radius:4px;font-weight:500}
+
+/* HERO */
+.hero{background:var(--dark);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'🪳';position:absolute;font-size:380px;opacity:.03;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-15deg);pointer-events:none;line-height:1}
+.hero-year{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:1.5rem;font-weight:500}
+.hero-bug{font-size:80px;display:block;margin-bottom:1.5rem;animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.hero h1{font-family:var(--font-display);font-size:clamp(48px,9vw,88px);font-weight:800;color:var(--off-white);line-height:1;margin-bottom:1rem;letter-spacing:-.02em}
+.hero h1 em{color:var(--orange);font-style:normal;display:block}
+.hero-pride{max-width:560px;margin:2rem auto 2.5rem;border-left:3px solid var(--orange);padding:1rem 1.5rem;text-align:left;background:rgba(255,255,255,.03);border-radius:0 8px 8px 0}
+.hero-pride p{font-size:16px;color:#aaa;line-height:1.8}
+.hero-pride strong{color:var(--orange);font-weight:500}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--orange);color:#fff;border:none;font-family:var(--font-body);font-size:15px;font-weight:500;padding:.8rem 2rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s,transform .15s}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--off-white);border:1px solid rgba(255,255,255,.15);font-family:var(--font-body);font-size:15px;padding:.8rem 2rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block;transition:border-color .2s,transform .15s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.4);transform:translateY(-1px)}
+
+/* STATS */
+.stats-bar{background:var(--dark2);padding:2rem;display:flex;justify-content:center;gap:4rem;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.stat{text-align:center}
+.stat-num{font-family:var(--font-display);font-size:32px;font-weight:800;color:var(--orange);display:block;line-height:1;margin-bottom:.3rem}
+.stat-label{font-size:11px;color:var(--muted2);letter-spacing:.1em;text-transform:uppercase}
+
+/* SECTIONS */
+.section{padding:5rem 2rem;max-width:780px;margin:0 auto}
+.section-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:.75rem;font-weight:500}
+.section-title{font-family:var(--font-display);font-size:clamp(28px,4vw,40px);font-weight:700;line-height:1.15;margin-bottom:.75rem;color:var(--dark)}
+.section-sub{font-size:16px;color:#555;line-height:1.7;margin-bottom:2.5rem;max-width:580px}
+
+/* CATEGORY CARDS */
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cat-card{border:1px solid rgba(0,0,0,.1);border-radius:16px;padding:2rem 1.5rem;text-align:center;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s;background:#fff;position:relative;overflow:hidden}
+.cat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:transparent;transition:background .2s}
+.cat-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08);border-color:var(--orange)}
+.cat-card:hover::before,.cat-card.selected::before{background:var(--orange)}
+.cat-card.chill{border-style:dashed}
+.cat-card.selected{border-color:var(--orange);border-width:2px;box-shadow:0 12px 40px rgba(216,90,48,.12)}
+.cat-emoji{font-size:44px;display:block;margin-bottom:1rem}
+.cat-name{font-family:var(--font-display);font-size:18px;font-weight:700;margin-bottom:.4rem;color:var(--dark)}
+.cat-tagline{font-size:13px;color:var(--orange);font-style:italic;margin-bottom:.75rem}
+.cat-desc{font-size:13px;color:#555;line-height:1.65;margin-bottom:.75rem}
+.cat-examples{font-size:11px;color:#888;line-height:1.6;border-top:1px solid rgba(0,0,0,.06);padding-top:.75rem}
+.cat-btn{margin-top:1.25rem;width:100%;font-family:var(--font-body);font-size:13px;padding:.55rem 1rem;border-radius:6px;cursor:pointer;border:1px solid rgba(0,0,0,.12);background:transparent;color:#555;transition:all .15s}
+.cat-card:hover .cat-btn,.cat-card.selected .cat-btn{background:var(--orange);border-color:var(--orange);color:#fff}
+
+/* DIVIDER */
+.divider{height:1px;background:rgba(0,0,0,.07);max-width:780px;margin:0 auto}
+.divider-full{max-width:100%}
+
+/* AWARDS (DARK) */
+.awards-section{background:var(--dark);padding:5rem 2rem}
+.awards-inner{max-width:780px;margin:0 auto}
+.awards-inner .section-title{color:var(--off-white)}
+.awards-inner .section-sub{color:var(--muted)}
+.awards-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.award-card{border:1px solid var(--border);border-radius:12px;padding:1.5rem;background:rgba(255,255,255,.03);transition:border-color .2s,background .2s}
+.award-card:hover{border-color:rgba(216,90,48,.4);background:rgba(216,90,48,.04)}
+.award-card.grand{border-color:var(--orange);background:rgba(216,90,48,.06)}
+.award-card.chill-award{border-style:dashed;border-color:var(--muted2)}
+.award-card.chill-award:hover{border-color:var(--orange);border-style:solid}
+.award-icon{font-size:28px;display:block;margin-bottom:.75rem}
+.award-name{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--off-white);margin-bottom:.4rem}
+.award-desc{font-size:13px;color:var(--muted);line-height:1.65}
+.award-tag{display:inline-block;margin-top:.75rem;font-size:10px;background:rgba(255,255,255,.06);color:var(--muted);padding:3px 10px;border-radius:20px;letter-spacing:.05em}
+.award-tag.grand-tag{background:var(--orange);color:#fff}
+.award-tag.chill-tag{border:1px solid var(--muted2);background:transparent}
+.chill-divider{grid-column:1/-1;display:flex;align-items:center;gap:1rem;margin:.5rem 0}
+.chill-divider-line{flex:1;height:1px;background:var(--border)}
+.chill-divider-text{font-size:11px;color:var(--muted2);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.chill-note{grid-column:1/-1;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;font-size:13px;color:var(--muted);line-height:1.7;text-align:center;margin-top:.5rem}
+.chill-note strong{color:var(--off-white);font-weight:500}
+
+/* MANIFESTO */
+.manifesto{background:var(--black);padding:6rem 2rem;text-align:center;position:relative;overflow:hidden}
+.manifesto::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at center,rgba(216,90,48,.08) 0%,transparent 70%);pointer-events:none}
+.manifesto-inner{max-width:620px;margin:0 auto;position:relative}
+.manifesto-kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted2);margin-bottom:2.5rem}
+.manifesto-lines p{font-family:var(--font-display);font-size:clamp(20px,3.5vw,28px);font-weight:700;color:var(--off-white);line-height:1.5;margin-bottom:.25rem}
+.manifesto-lines p.accent{color:var(--orange)}
+.manifesto-close{margin-top:2.5rem;font-size:14px;color:var(--muted2);line-height:1.8}
+
+/* STEPS */
+.steps-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.step{border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:1.5rem;background:#fff;position:relative;overflow:hidden}
+.step::after{content:attr(data-num);position:absolute;bottom:-10px;right:10px;font-family:var(--font-display);font-size:80px;font-weight:800;color:rgba(0,0,0,.04);line-height:1;pointer-events:none}
+.step-num{font-size:11px;color:var(--orange);font-weight:500;letter-spacing:.1em;margin-bottom:.6rem}
+.step-title{font-family:var(--font-display);font-size:17px;font-weight:700;margin-bottom:.4rem;color:var(--dark)}
+.step-body{font-size:13px;color:#555;line-height:1.65}
+
+/* REGISTER */
+.register-section{background:var(--dark2);padding:5rem 2rem}
+.register-inner{max-width:780px;margin:0 auto}
+.register-inner .section-title{color:var(--off-white)}
+.register-inner .section-sub{color:var(--muted)}
+.cat-pills{display:flex;gap:10px;margin-bottom:2rem;flex-wrap:wrap}
+.cat-pill{border:1px solid var(--border);border-radius:8px;padding:.65rem 1.25rem;cursor:pointer;font-family:var(--font-body);font-size:13px;color:var(--muted);background:transparent;transition:all .15s;flex:1;text-align:center;min-width:160px}
+.cat-pill:hover{border-color:var(--orange);color:var(--off-white)}
+.cat-pill.active{border-color:var(--orange);color:var(--orange);background:rgba(216,90,48,.08)}
+.form-container{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.form-container iframe{display:block;width:100%;border:none}
+
+/* HASHTAGS */
+.hash-section{background:var(--black);padding:4rem 2rem;text-align:center;border-top:1px solid var(--border)}
+.hash-title{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--off-white);margin-bottom:1.5rem}
+.hash-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:1.25rem}
+.hash-tag{background:var(--dark3);color:var(--orange);font-size:13px;font-weight:500;padding:.5rem 1.1rem;border-radius:100px;border:1px solid var(--dark3);transition:border-color .2s}
+.hash-tag:hover{border-color:var(--orange)}
+.hash-note{font-size:13px;color:var(--muted2);line-height:1.6}
+
+/* FOOTER */
+footer{background:var(--black);padding:3rem 2rem;text-align:center;border-top:1px solid var(--border)}
+.footer-logo{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--dark3);margin-bottom:.5rem}
+.footer-logo em{color:var(--orange);font-style:normal}
+.footer-links{display:flex;gap:1.5rem;justify-content:center;margin:1rem 0;flex-wrap:wrap}
+.footer-links a{font-size:13px;color:var(--muted2);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--orange)}
+.footer-copy{font-size:11px;color:var(--dark3);letter-spacing:.06em;margin-top:1rem}
+
+/* RESPONSIVE */
+@media(max-width:680px){
+  nav{padding:.75rem 1rem}
+  .nav-links{display:none}
+  .hero{padding:4rem 1.25rem 3rem;min-height:auto}
+  .hero::before{font-size:180px}
+  .stats-bar{gap:1.5rem;padding:1.5rem 1rem}
+  .cat-grid,.awards-grid,.steps-grid{grid-template-columns:1fr}
+  .section{padding:3.5rem 1.25rem}
+  .awards-section,.manifesto,.register-section{padding:3.5rem 1.25rem}
+  .cat-pills{flex-direction:column}
+  .cat-pill{min-width:auto}
+  .chill-divider{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span>RTI Activists</span><span>Reel Journalists</span><span>Road Warriors</span>
+    <span>River Cleaners</span><span>Cricket Players</span><span>Corruption Exposers</span>
+    <span>Student Fighters</span><span>Binge Watchers</span><span>Gig Workers</span>
+    <span>Gully Champions</span><span>SC / ST / OBC Change-makers</span><span>Whistleblowers</span>
+    <span>Dost ke saath ghumne wale</span><span>Grassroots Builders</span><span>Sone ke baad bhi ladne wale</span>
+    <span>RTI Activists</span><span>Reel Journalists</span><span>Road Warriors</span>
+    <span>River Cleaners</span><span>Cricket Players</span><span>Corruption Exposers</span>
+    <span>Student Fighters</span><span>Binge Watchers</span><span>Gig Workers</span>
+    <span>Gully Champions</span><span>SC / ST / OBC Change-makers</span><span>Whistleblowers</span>
+    <span>Dost ke saath ghumne wale</span><span>Grassroots Builders</span><span>Sone ke baad bhi ladne wale</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Cockroach <em>Talent Hunt</em> Awards</div>
+  <div class="nav-links">
+    <a href="#who-are-you">Categories</a>
+    <a href="#awards">Awards</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#register" class="nav-cta">Register free →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-year">India's Youth Movement · 2026</p>
+  <span class="hero-bug" aria-hidden="true">🪳</span>
+  <h1>Cockroach<br><em>Talent Hunt</em><br>Awards</h1>
+  <div class="hero-pride">
+    <p>Power calls us <strong>Cockroaches</strong>. We take that tag with pride.<br>
+    We are India's most necessary people. The <strong>youngest population in the world</strong>.<br>
+    Register, share your story, and show the country what cockroaches actually do.</p>
+  </div>
+  <div class="hero-btns">
+    <a href="#who-are-you" class="btn-primary">Find your category ↓</a>
+    <a href="#awards" class="btn-ghost">See award categories</a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num">65%</span><span class="stat-label">of India under 35</span></div>
+  <div class="stat"><span class="stat-num">600M+</span><span class="stat-label">Young Indians</span></div>
+  <div class="stat"><span class="stat-num">3</span><span class="stat-label">Categories</span></div>
+  <div class="stat"><span class="stat-num">0₹</span><span class="stat-label">Cost to register</span></div>
+</div>
+
+<!-- WHO ARE YOU -->
+<div id="who-are-you">
+  <div class="section">
+    <p class="section-label">Who are you?</p>
+    <h2 class="section-title">Pick your cockroach</h2>
+    <p class="section-sub">Three categories. One colony. All equally necessary.</p>
+    <div class="cat-grid">
+      <div class="cat-card" id="card-leader" onclick="selectCat('leader')">
+        <span class="cat-emoji">🪳</span>
+        <div class="cat-name">Leader Cockroach</div>
+        <div class="cat-tagline">Out there. Every day. Fighting.</div>
+        <div class="cat-desc">An individual doing active ground-level work — filing RTIs, making reels, exposing corruption, organising communities, cleaning rivers, breaking news no one else will touch.</div>
+        <div class="cat-examples">RTI activists · citizen journalists · whistleblowers · student leaders · Dalit rights workers · gig worker organisers · social media reporters</div>
+        <button class="cat-btn" id="btn-leader">Register as Leader Cockroach</button>
+      </div>
+      <div class="cat-card" id="card-team" onclick="selectCat('team')">
+        <span class="cat-emoji">🪳🪳🪳</span>
+        <div class="cat-name">Team Cockroach</div>
+        <div class="cat-tagline">Better together. Always.</div>
+        <div class="cat-desc">A group, collective, student union chapter, or community crew fighting together. The colony is stronger than any single cockroach.</div>
+        <div class="cat-examples">Student groups · journalism collectives · clean-up teams · farmers' rights groups · neighbourhood accountability circles · campus unions</div>
+        <button class="cat-btn" id="btn-team">Register as Team Cockroach</button>
+      </div>
+      <div class="cat-card chill" id="card-chill" onclick="selectCat('chill')">
+        <span class="cat-emoji">😎🪳</span>
+        <div class="cat-name">Chill Cockroach</div>
+        <div class="cat-tagline">Unhurried. Unbothered. Undefeated.</div>
+        <div class="cat-desc">You sleep long, binge three seasons in a day, play cricket in the gully, roam with friends — but truth is at your heart. You show up when it matters. That's enough.</div>
+        <div class="cat-examples">Gully cricket champions · binge watchers · chai-pe-charcha philosophers · dost ke saath ghumne wale · sone ke baad bhi dikhne wale</div>
+        <button class="cat-btn" id="btn-chill">Register as Chill Cockroach</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider divider-full"></div>
+
+<!-- AWARDS -->
+<section class="awards-section" id="awards">
+  <div class="awards-inner">
+    <p class="section-label">Award categories</p>
+    <h2 class="section-title">What we're recognising</h2>
+    <p class="section-sub">Eight awards for active cockroaches. Four special awards for the Chill ones. All free to apply for.</p>
+    <div class="awards-grid">
+      <div class="award-card"><span class="award-icon">📄</span><div class="award-name">RTI Warrior Award</div><div class="award-desc">Using the Right to Information Act to expose corruption, misuse of funds, or institutional failure — one petition at a time.</div><span class="award-tag">Leader / Team</span></div>
+      <div class="award-card"><span class="award-icon">📱</span><div class="award-name">Reel Revolution Award</div><div class="award-desc">Creating content that exposes broken roads, open drains, corrupt officials, or civic apathy. Going viral for the right reasons.</div><span class="award-tag">Leader / Team</span></div>
+      <div class="award-card"><span class="award-icon">🎙</span><div class="award-name">Ground Report Award</div><div class="award-desc">Original on-ground reporting that mainstream media ignored or was too scared to touch. Citizen or professional.</div><span class="award-tag">Leader / Team</span></div>
+      <div class="award-card"><span class="award-icon">🏗</span><div class="award-name">Fix It Yourself Award</div><div class="award-desc">Didn't wait for the government — filled the pit, cleaned the river, built the path, painted the school. Action over applications.</div><span class="award-tag">Leader / Team</span></div>
+      <div class="award-card"><span class="award-icon">⚖</span><div class="award-name">Justice Seeker Award</div><div class="award-desc">Fighting for the rights of SC, ST, OBC communities, gig workers, factory workers, or any group that power keeps invisible.</div><span class="award-tag">Leader / Team</span></div>
+      <div class="award-card"><span class="award-icon">🎓</span><div class="award-name">Student Fighter Award</div><div class="award-desc">Resisting exam corruption, demanding accountability, or organising on campuses. Studied hard. Got cheated. Kept fighting.</div><span class="award-tag">Leader / Team</span></div>
+      <div class="award-card"><span class="award-icon">🌱</span><div class="award-name">Grassroots Builder Award</div><div class="award-desc">Quietly building something real — libraries, health camps, skills training, savings groups — in communities that power forgot.</div><span class="award-tag">Leader / Team</span></div>
+      <div class="award-card grand"><span class="award-icon">🔥</span><div class="award-name">Most Unbreakable Cockroach</div><div class="award-desc">The grand prize. For the individual or team whose story of survival, courage, and impact defines what this entire movement stands for.</div><span class="award-tag grand-tag">Grand Prize · All categories</span></div>
+      <div class="chill-divider"><div class="chill-divider-line"></div><div class="chill-divider-text">😎 Chill Cockroach Awards</div><div class="chill-divider-line"></div></div>
+      <div class="award-card chill-award"><span class="award-icon">🏏</span><div class="award-name">Gully Cockroach of the Year</div><div class="award-desc">Plays cricket all day, knows every neta's scam by heart, explains it all to the colony between overs. Technically idle. Completely indispensable.</div><span class="award-tag chill-tag">Chill Cockroach</span></div>
+      <div class="award-card chill-award"><span class="award-icon">📺</span><div class="award-name">Binge Watcher with a Brain</div><div class="award-desc">47 episodes this week. Also explained why the local water scheme is corrupt to the entire family WhatsApp group. Priorities in order.</div><span class="award-tag chill-tag">Chill Cockroach</span></div>
+      <div class="award-card chill-award"><span class="award-icon">🛌</span><div class="award-name">Sleeping Cockroach Award</div><div class="award-desc">Slept through alarms, classes, and deadlines — but woke up for the protest. The colony was waiting. You arrived. That counts.</div><span class="award-tag chill-tag">Chill Cockroach</span></div>
+      <div class="award-card chill-award"><span class="award-icon">🚶</span><div class="award-name">Ghumakkad Cockroach Award</div><div class="award-desc">Always roaming, no fixed plan. But you've seen more of India than any bureaucrat in their AC office ever will. That's called fieldwork.</div><span class="award-tag chill-tag">Chill Cockroach</span></div>
+      <div class="chill-note">😎 <strong>Chill Cockroach truth:</strong> A cockroach that plays dead is still a cockroach. And when the moment comes — it moves. Fast. Everywhere. Unstoppable.</div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+  <div class="manifesto-inner">
+    <p class="manifesto-kicker">Why we are here</p>
+    <div class="manifesto-lines">
+      <p>Power calls us cockroaches.</p>
+      <p class="accent">We take that tag with pride.</p>
+      <p>We filed the RTI. We made the reel.</p>
+      <p>We cleaned the river. We exposed the pit.</p>
+      <p>We slept in. We played cricket.</p>
+      <p>We roamed with friends.</p>
+      <p class="accent">And we carried truth the whole time.</p>
+      <p>We are 600 million strong.</p>
+      <p>The youngest population on earth.</p>
+      <p class="accent">We are India's most necessary people.</p>
+    </div>
+    <p class="manifesto-close">We did not wait for permission to matter. Register. Share your story.<br>Show the country what cockroaches actually do.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<div id="how-it-works">
+  <div class="section">
+    <p class="section-label">How it works</p>
+    <h2 class="section-title">Four simple steps</h2>
+    <p class="section-sub">Hindi mein bhi likh sakte hain. Your story matters more than your grammar.</p>
+    <div class="steps-grid">
+      <div class="step" data-num="1"><div class="step-num">Step 01</div><div class="step-title">Pick your category</div><div class="step-body">Leader, Team, or Chill Cockroach. Choose what fits. All three are equally welcome in the colony.</div></div>
+      <div class="step" data-num="2"><div class="step-num">Step 02</div><div class="step-title">Share your story</div><div class="step-body">Tell us what you've done or who you are — in Hindi or English. Attach links to reels, RTI filings, reports, or anything that shows your work.</div></div>
+      <div class="step" data-num="3"><div class="step-num">Step 03</div><div class="step-title">Get shortlisted</div><div class="step-body">A panel of journalists, activists, and citizens shortlists nominees in each category. Shortlisted entries are published publicly.</div></div>
+      <div class="step" data-num="4"><div class="step-num">Step 04</div><div class="step-title">Awards ceremony</div><div class="step-body">Winners announced at a public event — live-streamed and open to all. Every nominee gets recognition. Every story gets heard.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider divider-full"></div>
+
+<!-- REGISTER -->
+<section class="register-section" id="register">
+  <div class="register-inner">
+    <p class="section-label">Registration</p>
+    <h2 class="section-title">Join the colony</h2>
+    <p class="section-sub">Free. Open to every Indian. No degree, no follower count, no connections required.</p>
+    <div class="cat-pills">
+      <button class="cat-pill active" id="pill-leader" onclick="setPill('leader')">🪳 Leader Cockroach</button>
+      <button class="cat-pill" id="pill-team" onclick="setPill('team')">🪳🪳🪳 Team Cockroach</button>
+      <button class="cat-pill" id="pill-chill" onclick="setPill('chill')">😎 Chill Cockroach</button>
+    </div>
+    <div class="form-container">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdkiUIcyYSR2RviIcJg7P7XjakYp3Dz9ZBMnsoKNTFxTb7WRw/viewform?embedded=true"
+        width="100%"
+        height="4480"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Cockroach Talent Hunt Awards 2026 — Nomination Form">
+        Loading form...
+      </iframe>
+    </div>
+    <p style="font-size:12px;color:#555;text-align:center;margin-top:1rem">Free to register. No personal data sold. This is a people's campaign.</p>
+  </div>
+</section>
+
+<!-- HASHTAGS -->
+<section class="hash-section">
+  <div class="hash-title">Spread across the colony</div>
+  <div class="hash-tags">
+    <span class="hash-tag">#CockroachTalentHunt</span>
+    <span class="hash-tag">#IAmCockroach</span>
+    <span class="hash-tag">#MainCockroachHoon</span>
+    <span class="hash-tag">#LeaderCockroach</span>
+    <span class="hash-tag">#TeamCockroach</span>
+    <span class="hash-tag">#ChillCockroach</span>
+    <span class="hash-tag">#YouthFightBack</span>
+    <span class="hash-tag">#HumSabCockroachHain</span>
+  </div>
+  <p class="hash-note">Share your nomination. Tag your colony. Let India see what cockroaches actually do.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Cockroach <em>Talent Hunt</em> Awards</div>
+  <p style="font-size:12px;color:#2a2a2a;margin:.3rem 0">A people's campaign · India 2026</p>
+  <div class="footer-links">
+    <a href="#">Instagram</a>
+    <a href="#">Twitter / X</a>
+    <a href="#">WhatsApp Community</a>
+    <a href="#">Contact</a>
+  </div>
+  <p class="footer-copy">Power calls us cockroaches. We take that tag with pride.</p>
+</footer>
+
+<script>
+function selectCat(c){
+  ['leader','team','chill'].forEach(function(x){
+    document.getElementById('card-'+x).classList.remove('selected');
+    var n={leader:'Leader Cockroach',team:'Team Cockroach',chill:'Chill Cockroach'};
+    document.getElementById('btn-'+x).textContent='Register as '+n[x];
+  });
+  document.getElementById('card-'+c).classList.add('selected');
+  document.getElementById('btn-'+c).textContent='✓ Selected — scroll to register ↓';
+  setPill(c);
+  setTimeout(function(){document.getElementById('register').scrollIntoView({behavior:'smooth'})},300);
+}
+function setPill(c){
+  ['leader','team','chill'].forEach(function(x){
+    document.getElementById('pill-'+x).classList.remove('active');
+  });
+  document.getElementById('pill-'+c).classList.add('active');
+}
+</script>
+</body>
+</html>
